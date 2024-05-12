@@ -12,7 +12,7 @@ const BtnView: React.FC<{ record: Record }> = ({ record }) => {
       <DialogComponent
         open={showModal}
         title={"View Task"}
-        content={`The fact '${record?.title}' has ${record.upvotes}`}
+        content={`The fact '${record?.title}' has ${record.upvotes} upvotes`}
         onClose={() => setIsModalShown(false)}
       />
       <button
