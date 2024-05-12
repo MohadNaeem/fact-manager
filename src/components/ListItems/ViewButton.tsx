@@ -1,12 +1,9 @@
 import React, { useState } from "react";
-// import ModalConfirm from "../../utils/ModalConfirm";
-import { useRecords } from "../../context/RecordContext";
 import DialogComponent from "../Dialogs/DialogComponent";
 import { Record } from "../../interfaces/Record";
 
 const BtnView: React.FC<{ record: Record }> = ({ record }) => {
   const [showModal, setIsModalShown] = useState<boolean>(false);
-  const { state: records, dispatch } = useRecords();
   return (
     <>
       <DialogComponent
